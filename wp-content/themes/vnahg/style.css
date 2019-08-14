@@ -1,0 +1,407 @@
+/*
+Theme Name: VNA Health Group
+Theme URI: https://wordpress.org/themes/twentysixteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
+Version: 1.8
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
+Text Domain: twentysixteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Normalize
+ * 2.0 - Genericons
+ * 3.0 - Typography
+ * 4.0 - Elements
+ * 5.0 - Forms
+ * 6.0 - Navigation
+ *   6.1 - Links
+ *   6.2 - Menus
+ * 7.0 - Accessibility
+ * 8.0 - Alignments
+ * 9.0 - Clearings
+ * 10.0 - Widgets
+ * 11.0 - Content
+ *    11.1 - Header
+ *    11.2 - Posts and pages
+ *    11.3 - Post Formats
+ *    11.4 - Comments
+ *    11.5 - Sidebar
+ *    11.6 - Footer
+ * 12.0 - Media
+ *    12.1 - Captions
+ *    12.2 - Galleries
+ * 13.0 - Multisite
+ * 14.0 - Media Queries
+ *    14.1 - >= 710px
+ *    14.2 - >= 783px
+ *    14.3 - >= 910px
+ *    14.4 - >= 985px
+ *    14.5 - >= 1200px
+ * 15.0 - Print
+ */
+
+
+/**
+ * 1.0 - Normalize
+ *
+ * Normalizing styles have been helped along thanks to the fine work of
+ * Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+ */
+
+/*
+
+   font-family: 'Nunito';
+
+   font-family: 'Nunito';
+
+
+.tk-proxima-nova { font-family: "proxima-nova",sans-serif; }
+.tk-proxima-nova-condensed { font-family: "proxima-nova-condensed",sans-serif; }
+.tk-proxima-nova-extra-condensed { font-family: "proxima-nova-extra-condensed",sans-serif; }
+
+*/
+
+.page-header,
+.leading_way_section { padding: 60px 0; }
+
+
+.t-center { top:50%; left:50%;
+transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+position:absolute;
+ 
+
+ }
+.main-navigation .dropdown-toggle:after { display: none; }
+.main-navigation .dropdown-toggle { border: none; outline: none; display: none; background: transparent; padding: 0px; margin: 0px; height: 23px; line-height: 22px; }
+.main-navigation .dropdown-toggle:before {    font-family: 'Font Awesome 5 Pro'; font-size: 20px; font-weight: 300;
+  content: "\f107"; display: inline-block; vertical-align: middle; margin-left:5px; color: #000; }
+
+.main-navigation li li .dropdown-toggle:before { content: "\f105"; }
+.main-navigation li li .dropdown-toggle { position: absolute; right: 10px; top: 5px; }
+
+
+ 
+.more_event h3,
+.event-content-deatils h4,
+h2.block-tittle,
+h2{ font-size:150%; }
+
+.site-footer .phone a,
+.upcoming_events_section .top_heading_para p { font-size:120%;  }
+
+.chfi_service_section .iteams:last-child a{ font-size:150%; }
+
+
+.home_service_section .container { max-width:950px; }
+
+
+@media (max-width:1199px) { 
+
+.site-info p, .site-footer { font-size: 12px; }
+
+.site-footer .switcher { margin: 0 0 0 -20px; }
+
+
+}
+
+@media (max-width:1024px) { 
+
+.home-page-content-table-cell { width: 300px; height: 300px; padding:90px 40px 40px 50px; left: -30px; bottom: -90px; } 
+.home-page-content-table-cell h1 { font-size: 150%; }
+.slider_button_text { margin-top: 10px; }
+.slider_button_text a { padding-right: 40px; }
+
+.upcoming_events_work_box .events-content p { font-size: 90%; }
+
+.post-thumbnail img{width: 500px;}
+
+.scheduling_service_content { padding:10px 20px; }
+
+}
+
+@media (max-width:991px) { 
+.single #content { padding-top: 0px; }
+
+.main-navigation ul li a { font-size: 14px; }
+.main-navigation li { padding:5px 15px; }
+
+.site-footer .switcher { margin: 0px 10px; }
+
+.Zeno_FR_Widget { float: none; display: inline-block;  }
+
+.home-page-content-table-cell { bottom: -115px;  }
+
+.right-text .location_giving_content,
+.text-left .location_giving_content { clear: both; float: none; max-width: 100%; padding: 15px 30px 30px 15px; }
+
+.home_blog_section .blog_icon_sec .col-md-6:nth-child(3) { display: none; }
+.home_blog_section { padding-top: 10px; }
+
+.upcoming_events_work_img {width: 100%; padding:3px 0px;}
+
+.main-nav { position: relative; }
+.p-40 { padding-top: 20px; padding-bottom: 20px; }
+.post-thumbnail img {width: 100%;}
+.post-thumbnail{ padding: 0px; width: 100%; float: none; display: block; clear: both; }
+
+.event-content-deatils .entry-header{ display: block; clear: both; padding-top: 15px; }
+.more_event h3 { padding: 20px 0; }
+#related_posts .col-lg-4:nth-child(4) { display: block; }
+
+#related_posts .col-lg-4 { margin-bottom:20px; }
+#related_posts { margin-bottom: 0px; }
+.post_category_name{ clear: both; }
+
+.page-template-custom-templatecfhi-page-php .collaborative_care_section .display-table-cell { padding: 30px 15px; }
+
+.chfi_service_section .iteams { padding:0 15px 15px 15px;  }
+.chfi_service_section .iteams:last-child a{ font-size:18px; }
+
+.our_caring_section .our_caring_wraper{ height:300px; padding-bottom: 20px; }
+.our_caring_section h3{ font-size: 24px; }
+
+ 
+.collaborative_care_wraper .display-table-cell { padding: 15px; }
+.skilled_home_care_content { padding: 15px 0;}
+
+.collaborative_care_section + .contact-strip { margin: 30px 0; }
+.vna_home_care_section,
+.team_health_section,
+.our_specialties_section { padding: 30px 0; }
+
+.round-3 { display: none; }
+.page-template-custom-templatethanks-page-php #content, .error404 #content { padding:100px 0 50px 0;  }
+
+.site-footer .col-lg-2.col-md-12 { text-align: center; padding-top: 15px; }
+
+.site-info{ padding-top: 10px; }
+
+.switcher,
+#custom_html-3 { display: inline-block; vertical-align: top; float: none; margin: 0px; }
+
+.faq_leading_section .container, .executive_leadership_section .container {padding-right: 15px; padding-left: 15px; }
+
+.contact_page_section .top_heading_para,
+.page-header, .leading_way_section,
+.faq_leading_section{ padding:30px 0; }
+
+.mission_giving_section{ padding: 0 0 30px 0; }
+
+.last-f { float: none;  } 
+
+}
+
+@media (min-width:768px) { 
+
+.main-navigation li:hover > .sub-menu { display: block; }
+
+#site-header-menu { width: auto !important;  }
+
+}
+
+@media (max-width:767px) { 
+
+    .main-navigation .dropdown-toggle{ display: inline-block; }
+
+.site-header .current_page_item,
+.main-navigation li .sub-menu .current-menu-item > a, .main-navigation li .sub-menu li > a:hover { background:transparent !important; color: #f28019;  }
+
+    .main-navigation ul.sub-menu li a { color: #000; }
+
+.blog_work_box { margin-bottom: 20px; height: auto; }
+.home_blog_section .learn_more { padding-top: 0px; }
+.upcoming_events_work_img img {width: 100%; }
+.upcoming_events_section .learn_more { padding-top: 10px; }
+.upcoming_events_section .upcoming_events_work_box { margin-bottom: 20px;   }
+
+.site-footer { padding: 10px 0; }
+
+.site-footer .custom-logo-link { margin: auto;  }
+.site-footer .site-branding { padding-bottom: 10px; }
+.home-page-content-table-cell{ width: 250px; height: 250px; padding: 42px 38px 34px 43px;  }
+.home-page-banner { overflow: hidden; }
+.home-page-content-table-cell h1 { font-size: 130%; }
+.slider_button_text { margin: 0px; font-size: 90%; }
+.slider_button_text a {  padding-right: 25px; background-size: 20px; }
+.site-footer .menu li { padding: 2px 0; }
+.home_service_section .service_work_img {  }
+ .site-info p, .site-footer { font-size: 11px; }
+ .home_service_section{ padding: 30px 0 15px 0;  }
+ .upcoming_events_section { padding: 20px 0; }
+
+.home-page-banner { padding-top: 55%; }
+
+.site-header .text-right .cell-number,
+.site-header .text-right .translate { display: none; }
+ 
+
+  .main-navigation ul li a { color: #000; }
+
+.sidenav { height: 100%;   width: 0;   position: fixed;   z-index: 1;   top: 0;   right: 0; background-color: #fff;   overflow-x: hidden; 
+ padding:60px 0px; text-align: left;      transition: 0.5s;   }
+#site-navigation { width:100%; }
+.sidenav .primary-menu li { text-align: left; display: block; clear: both; padding:10px 20px; }
+
+.sidenav .primary-menu li ul.sub-menu { background-color: #fff; position: relative; width: auto;
+    margin:5px -20px -10px -20px;
+    padding: 13px; }
+
+ .sidenav .primary-menu .sub-menu.toggled-on { display: block; }
+ .main-navigation .dropdown-toggle:before { content: "\f105"; }
+ .main-navigation .dropdown-toggle.toggled-on:before { content: "\f107"; }
+
+ .main-navigation li .sub-menu .current-menu-item > a, .main-navigation li .sub-menu li > a:hover { color: #f28019 ; }
+
+
+    .sidenav .primary-menu li ul.sub-menu { clear: both; position: relative;  }
+.main-navigation li .sub-menu .sub-menu { left: 0px;  margin-left: 0px !important; }
+
+.sidenav i { font-weight: 300; }
+.closebtn {     color: #fff;
+    background-color: #f28019;
+    padding: 0px 10px;
+    font-size: 26px;
+    margin: -60px 0 0 0px;
+    float: left; }
+.sidenav .primary-menu li a{  }
+.humbers{ color: #f28019 ; }
+.main-navigation .dropdown-toggle { float: right; }
+
+.site-header .current_page_item{ background-color: #f28019; }
+
+.humbers,
+.closebtn{ display: block; }
+
+.event-page h2.h5{ padding: 20px 0; }
+.event-page .col-lg-4 { margin-bottom: 0px; }
+.inner-pages-banner { padding-top: 45%; }
+
+
+
+.nav-links { padding: 20px 0; }
+
+/* blog */
+
+#related_posts .col-lg-4:nth-child(4) { display: none; }
+#related_posts .col-lg-4 { margin-bottom:0; }
+.newsletter_section { padding: 20px 0 30px 0; }
+
+.newsletter_section h2 { padding-bottom: 20px; }
+
+.chfi_service_section,
+.team_health_section{ padding: 30px 0; }
+.chfi_service_section .iteams:nth-child(2n+1) { border: none; }
+.chfi_service_section .iteams { position: relative; margin-bottom: 15px; }
+.chfi_service_section .iteams:after { position: absolute; bottom: 0px; height: 1px; left: 50%; margin-left: -70px; width: 140px; content: " "; background-color: #f28019; display: block; }
+
+.chfi_service_section .iteams:last-child:after { display: none; }
+.chfi_service_section .iteams:last-child { padding-bottom: 0px; margin-bottom: 0px; }
+.our_caring_section .our_caring_wraper {align-items: flex-start; }
+.our_caring_section h3 { width: 100%; color: #000; text-align: center; }
+.our_caring_section { background-position: right 90px; background-repeat: no-repeat; background-size: 600px;  }
+
+
+.more_event h3, .event-content-deatils h4, h2.block-tittle, h2,
+h3 {   font-size:130%; }
+
+.skilled_home_care_content h2{ margin-bottom: 15px; }
+.our_specialties_section h2 { margin-bottom: 20px; }
+
+
+.vna_home_care_section { background-size:60px; background-position: 0 center; }
+.vna_home_care_section::after { width: 60px; }
+.vna_home_care_section h3 { margin: 0px; }
+
+.vna_home_care_section .container { padding: 0 80px; }
+.vna_home_care_section { font-size: 14px; }
+
+.our_specialties_section .owl-theme .owl-nav { margin-top: 0px; }
+
+.donate_top_section .container { padding-top: 30px; padding-bottom: 30px; }
+
+.BBFormRadioLabelGivingLevelOther span, .BBFormContainer[data-bbox-part-id="502cd0bf-3571-46a8-a174-5bc5cbe8f33f"] .BBFormRadioLabelGivingLevel, .donation_form_section .BBFormRadioAmount {
+font-size: 14px!important; padding: 5px!important; min-width: 50px !important; }
+
+.BBFormAddress .BBFormFieldContainer .BBFormSelectList.BBFormCountryDropDown, .BBFormContainer[data-bbox-part-id="502cd0bf-3571-46a8-a174-5bc5cbe8f33f"] .BBFormTextbox, .BBFormContainer[data-bbox-part-id="502cd0bf-3571-46a8-a174-5bc5cbe8f33f"] .BBFormSelectList, .BBFormContainer[data-bbox-part-id="502cd0bf-3571-46a8-a174-5bc5cbe8f33f"] .BBFormTextArea, .BBFormContainer[data-bbox-part-id="502cd0bf-3571-46a8-a174-5bc5cbe8f33f"] .BBFormChecklist { max-width: 100% !important;  }
+
+ 
+.BBTwoFields .BBFormFieldContainer .BBFormSelectList, .BBTwoFields .BBFormFieldContainer .BBFormTextbox { max-width:48% !important;  }
+
+.go-home { text-align: center; padding-top: 30px; }
+
+.round { font-size: 18px; height: 200px; width: 200px; }
+.go-home a { font-size: 14px; display: inline-block; }
+.round::after { top: -65px; }
+
+.site-footer .col-md-3{ text-align: center; }
+
+#custom_html-2{ display: none; }
+
+.home-page-content-table-cell:after, .inner-pages-content-table-cell:after,
+.home-page-content-table-cell:before, .inner-pages-content-table-cell:before { display: none; }
+
+.inner-pages-content-table-cell h1 { font-size:18px; text-align:center;  }
+ 
+ .inner-pages-content-table-cell { height: 200px; width: 200px;   }
+
+.inner-pages-content-table-cell { padding:30px 10px 60px 35px; bottom: -50px; }
+
+.collaborative_care_section{ margin-bottom: 20px; }
+
+.mission_giving_section a,
+.specialties_sec .item a{ padding: 50px 0; margin-bottom:0px; }
+
+.vna-accordion_submenu_list li p.vna-accordion_submenu_title,
+.card-header a{ font-size: 100%; }
+
+.vna-accordion_submenu_list li{ padding: 5px; }
+
+.video_gallery_wraper .modal-body { padding: 20px; }
+
+.video_gallery_wraper .modal-header { padding: 0 5px; top:0px; right: 0px; background: #f28019; color: #fff; border-radius: 0; }
+.video_gallery_wraper .modal-header .close{ color: #fff;  }
+
+.photo_gallery_section .photo_gallery_img { margin-bottom: 10px; padding: 0 5px;  }
+.photo_gallery_section .row { margin: 0 -5px; }
+
+.download_pdf_section ul li { width: 100%; clear: both; }
+
+
+#bboxdonation_tribute_txtTributeRecordName{ margin-left:0px !important; }
+#bboxdonation_tribute_txtLastName, #bboxdonation_tribute_txtFirstName { width: 188px !important; }
+
+
+#bboxdonation_billing_billingAddress_txtAddress, .BBFormFieldContainer .BBFormTextbox, .BBFormContainer[data-bbox-part-id="502cd0bf-3571-46a8-a174-5bc5cbe8f33f"] .BBFormChecklist { max-width: 100%; }
+
+.mission_giving_section .container .col-sm-6 { padding: 0 15px; }
+
+.site-header-main .row { align-items: center; }
+.site-header-main .humbers  { margin-bottom: -2px; }
+.specialties_item li:nth-child(2n+1) .item,
+.specialties_sec .item { background-size: 50px;  }
+
+.contact-strip span { font-size: 110%; }
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width:991px) {  
+
+}
+
+.wpsl-directions {
+  display: none;
+}

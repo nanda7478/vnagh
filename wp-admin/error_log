@@ -1,0 +1,13 @@
+[06-Feb-2019 05:51:13 UTC] WordPress database error Unknown column 'wpvn_' in 'field list' for query SELECT wpvn_
+[06-Feb-2019 02:15:31 America/Chicago] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[07-Feb-2019 07:04:25 UTC] EL_UPGRADE: Maximum script execution time: 30 seconds
+[07-Feb-2019 07:04:25 UTC] EL_UPGRADE: Added option "el_upgr_in_progress" with value "1549523065"
+[07-Feb-2019 07:04:25 UTC] EL_UPGRADE: Added option "el_last_upgr_version" with value "0.8.3"
+[07-Feb-2019 07:04:25 UTC] EL_UPGRADE: New install -> no upgrade required
+[08-Feb-2019 11:23:40 UTC] PHP Parse error:  syntax error, unexpected ''Appears at the bottom of the ' (T_ENCAPSED_AND_WHITESPACE) in /home4/tminfotech/demosrvr.com/wp/vnahg/wp-content/themes/vnahg/functions.php on line 241
+[13-Feb-2019 22:20:50 America/Chicago] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[20-Feb-2019 22:22:48 America/Chicago] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[28-Feb-2019 06:43:45 America/Chicago] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[07-Mar-2019 08:28:55 America/Chicago] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[14-Mar-2019 09:46:45 America/Chicago] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[22-Mar-2019 23:42:27 America/Chicago] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
